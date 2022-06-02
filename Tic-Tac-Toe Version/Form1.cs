@@ -214,7 +214,7 @@ namespace Tic_Tac_Toe_Version
                 MessageBox.Show(Winner + ""," YOU WIN"); 
             }
 
-            if (A_Winner_is_Recognized) 
+            if (A_Winner_is_Recognized)
             {
                 BT1.Enabled = false;
                 BT4.Enabled = false;
