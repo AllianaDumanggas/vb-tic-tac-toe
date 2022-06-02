@@ -213,6 +213,20 @@ namespace Tic_Tac_Toe_Version
                 }
                 MessageBox.Show(Winner + ""," YOU WIN"); 
             }
+
+            if (A_Winner_is_Recognized) 
+            {
+                BT1.Enabled = false;
+                BT4.Enabled = false;
+                BT7.Enabled = false;
+                BT2.Enabled = false;
+                BT5.Enabled = false;
+                BT8.Enabled = false;
+                BT3.Enabled = false;
+                BT6.Enabled = false;
+                BT9.Enabled = false;
+            }
+
         }
     }
 }
