@@ -44,6 +44,7 @@ namespace Tic_Tac_Toe_Version
             this.PBYDOG = new System.Windows.Forms.PictureBox();
             this.CAT = new System.Windows.Forms.Label();
             this.DOG = new System.Windows.Forms.Label();
+            this.PLAYAGAINBUTTON = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PBXCAT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PBYDOG)).BeginInit();
             this.SuspendLayout();
@@ -141,7 +142,7 @@ namespace Tic_Tac_Toe_Version
             // EXITBUTTON
             // 
             this.EXITBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.EXITBUTTON.Location = new System.Drawing.Point(522, 372);
+            this.EXITBUTTON.Location = new System.Drawing.Point(521, 435);
             this.EXITBUTTON.Name = "EXITBUTTON";
             this.EXITBUTTON.Size = new System.Drawing.Size(155, 52);
             this.EXITBUTTON.TabIndex = 9;
@@ -189,12 +190,24 @@ namespace Tic_Tac_Toe_Version
             this.DOG.TabIndex = 14;
             this.DOG.Text = "PLAYER 2";
             // 
+            // PLAYAGAINBUTTON
+            // 
+            this.PLAYAGAINBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PLAYAGAINBUTTON.Location = new System.Drawing.Point(521, 380);
+            this.PLAYAGAINBUTTON.Name = "PLAYAGAINBUTTON";
+            this.PLAYAGAINBUTTON.Size = new System.Drawing.Size(155, 49);
+            this.PLAYAGAINBUTTON.TabIndex = 15;
+            this.PLAYAGAINBUTTON.Text = "PLAY AGAIN";
+            this.PLAYAGAINBUTTON.UseVisualStyleBackColor = false;
+            this.PLAYAGAINBUTTON.Click += new System.EventHandler(this.PLAYAGAINBUTTON_Click);
+            // 
             // TICTACTOE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(741, 586);
+            this.Controls.Add(this.PLAYAGAINBUTTON);
             this.Controls.Add(this.DOG);
             this.Controls.Add(this.CAT);
             this.Controls.Add(this.PBYDOG);
@@ -234,6 +247,7 @@ namespace Tic_Tac_Toe_Version
         private System.Windows.Forms.PictureBox PBYDOG;
         private System.Windows.Forms.Label CAT;
         private System.Windows.Forms.Label DOG;
+        private System.Windows.Forms.Button PLAYAGAINBUTTON;
     }
 }
 

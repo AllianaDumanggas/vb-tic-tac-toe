@@ -225,11 +225,11 @@ namespace Tic_Tac_Toe_Version
                 string Winner = "";
                 if (PlayerTurn) 
                 {
-                    Winner = "Player 2, What an Arf";
+                    Winner = "Player 2, What an Arf, Congrats";
                 }
                 else
                 {
-                    Winner = "Player 1, What a Meow";
+                    Winner = "Player 1, What a Meow, Congrats";
                 }
                 MessageBox.Show(Winner + ""," YOU WIN"); 
                 
@@ -248,10 +248,7 @@ namespace Tic_Tac_Toe_Version
                 BT6.Enabled = false;
                 BT9.Enabled = false;
             }
-
              
-             
-
         }
  
         private void EXITBUTTON_Click(object sender, EventArgs e)
@@ -272,9 +269,41 @@ namespace Tic_Tac_Toe_Version
             {
                 return false;
             }
-                
+               
         }
 
-         
+        private void TryAgain()
+        {
+            Boolean PlayAgain = true;
+            if ( PlayAgain)
+            {
+                PlayerTurn = true;
+                BT1.Image = null;
+                BT1.Enabled = true;
+                BT2.Image = null;
+                BT2.Enabled = true;
+                BT3.Image = null;
+                BT3.Enabled = true;
+                BT4.Image = null;
+                BT4.Enabled = true;
+                BT5.Image = null;
+                BT5.Enabled = true;
+                BT6.Image = null;
+                BT6.Enabled = true;
+                BT7.Image = null;
+                BT7.Enabled = true;
+                BT8.Image = null;
+                BT8.Enabled = true;
+                BT9.Image = null;
+                BT9.Enabled = true;
+                turns = 0;
+            }
+           
+        }
+
+        private void PLAYAGAINBUTTON_Click(object sender, EventArgs e)
+        {
+            TryAgain();
+        }
     }
 }
