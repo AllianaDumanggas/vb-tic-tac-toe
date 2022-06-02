@@ -40,7 +40,6 @@ namespace Tic_Tac_Toe_Version
             this.BT8 = new System.Windows.Forms.Button();
             this.BT9 = new System.Windows.Forms.Button();
             this.EXITBUTTON = new System.Windows.Forms.Button();
-            this.TRYAGAINBUTTON = new System.Windows.Forms.Button();
             this.PBXCAT = new System.Windows.Forms.PictureBox();
             this.PBYDOG = new System.Windows.Forms.PictureBox();
             this.CAT = new System.Windows.Forms.Label();
@@ -142,22 +141,13 @@ namespace Tic_Tac_Toe_Version
             // EXITBUTTON
             // 
             this.EXITBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.EXITBUTTON.Location = new System.Drawing.Point(517, 450);
+            this.EXITBUTTON.Location = new System.Drawing.Point(522, 372);
             this.EXITBUTTON.Name = "EXITBUTTON";
             this.EXITBUTTON.Size = new System.Drawing.Size(155, 52);
             this.EXITBUTTON.TabIndex = 9;
             this.EXITBUTTON.Text = "EXIT";
             this.EXITBUTTON.UseVisualStyleBackColor = false;
-            // 
-            // TRYAGAINBUTTON
-            // 
-            this.TRYAGAINBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.TRYAGAINBUTTON.Location = new System.Drawing.Point(517, 392);
-            this.TRYAGAINBUTTON.Name = "TRYAGAINBUTTON";
-            this.TRYAGAINBUTTON.Size = new System.Drawing.Size(155, 52);
-            this.TRYAGAINBUTTON.TabIndex = 10;
-            this.TRYAGAINBUTTON.Text = "TRY AGAIN";
-            this.TRYAGAINBUTTON.UseVisualStyleBackColor = false;
+            this.EXITBUTTON.Click += new System.EventHandler(this.EXITBUTTON_Click);
             // 
             // PBXCAT
             // 
@@ -209,7 +199,6 @@ namespace Tic_Tac_Toe_Version
             this.Controls.Add(this.CAT);
             this.Controls.Add(this.PBYDOG);
             this.Controls.Add(this.PBXCAT);
-            this.Controls.Add(this.TRYAGAINBUTTON);
             this.Controls.Add(this.EXITBUTTON);
             this.Controls.Add(this.BT9);
             this.Controls.Add(this.BT8);
@@ -241,7 +230,6 @@ namespace Tic_Tac_Toe_Version
         private System.Windows.Forms.Button BT8;
         private System.Windows.Forms.Button BT9;
         private System.Windows.Forms.Button EXITBUTTON;
-        private System.Windows.Forms.Button TRYAGAINBUTTON;
         private System.Windows.Forms.PictureBox PBXCAT;
         private System.Windows.Forms.PictureBox PBYDOG;
         private System.Windows.Forms.Label CAT;
