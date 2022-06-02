@@ -20,6 +20,7 @@ namespace Tic_Tac_Toe_Version
         Boolean PlayerTurn = false;
         //Player1turn= ture;
         //Player2turn=false;
+         
 
         private void BT1_Click(object sender, EventArgs e)
         {
@@ -33,6 +34,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT1.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
             
         }
 
@@ -48,6 +50,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT2.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
              
         }
 
@@ -63,6 +66,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT3.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT4_Click(object sender, EventArgs e)
@@ -77,6 +81,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT4.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT5_Click(object sender, EventArgs e)
@@ -91,6 +96,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT5.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT6_Click(object sender, EventArgs e)
@@ -105,6 +111,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT6.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT7_Click(object sender, EventArgs e)
@@ -119,6 +126,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT7.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT8_Click(object sender, EventArgs e)
@@ -133,6 +141,7 @@ namespace Tic_Tac_Toe_Version
             }
             BT8.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
         }
 
         private void BT9_Click(object sender, EventArgs e)
@@ -147,6 +156,63 @@ namespace Tic_Tac_Toe_Version
             }
             BT9.Enabled = false;
             PlayerTurn = !PlayerTurn;
+            WinnerCheck();
+        }
+
+        private void WinnerCheck() 
+        {
+            Boolean A_Winner_is_Recognized = false;
+            // to check if there is already a winner
+
+            // HORIZONTAL CHECK
+            if ((BT1.Image == BT2.Image) && (BT2.Image == BT3.Image) && (!BT1.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            else if ((BT4.Image == BT5.Image) && (BT5.Image == BT6.Image) && (!BT4.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            else if ((BT7.Image == BT8.Image) && (BT8.Image == BT9.Image) && (!BT7.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            // VERTICAL CHECK
+            else if ((BT1.Image == BT4.Image) && (BT4.Image == BT7.Image) && (!BT1.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            else if ((BT2.Image == BT5.Image) && (BT5.Image == BT8.Image) && (!BT2.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            else if ((BT3.Image == BT6.Image) && (BT6.Image == BT9.Image) && (!BT3.Enabled))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            // DIAGONAL CHECK
+            else if ((BT1.Image == BT5.Image ) && (BT5.Image == BT9.Image ) && (!BT1.Enabled ))
+            {
+                A_Winner_is_Recognized = true;
+            }
+            else if ((BT3.Image == BT5.Image ) && (BT5.Image == BT7.Image ) && (!BT3.Enabled ))
+            {
+                A_Winner_is_Recognized = true;
+            }
+
+            if (A_Winner_is_Recognized)
+            {
+                string Winner = "";
+                if (PlayerTurn) 
+                {
+                    Winner = "Player 2, What an Arf";
+                }
+                else
+                {
+                    Winner = "Player 1, What a Meow";
+                }
+                MessageBox.Show(Winner + ""," YOU WIN"); 
+            }
         }
     }
 }
