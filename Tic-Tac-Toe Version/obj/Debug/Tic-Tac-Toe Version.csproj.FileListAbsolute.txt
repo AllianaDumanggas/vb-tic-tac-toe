@@ -1,0 +1,10 @@
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\bin\Debug\Tic-Tac-Toe Version.exe.config
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\bin\Debug\Tic-Tac-Toe Version.exe
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\bin\Debug\Tic-Tac-Toe Version.pdb
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic-Tac-Toe Version.csproj.AssemblyReference.cache
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic_Tac_Toe_Version.TICTACTOE.resources
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic_Tac_Toe_Version.Properties.Resources.resources
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic-Tac-Toe Version.csproj.GenerateResource.cache
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic-Tac-Toe Version.csproj.CoreCompileInputs.cache
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic-Tac-Toe Version.exe
+C:\Users\universal\source\repos\Tic-Tac-Toe Version\Tic-Tac-Toe Version\obj\Debug\Tic-Tac-Toe Version.pdb
